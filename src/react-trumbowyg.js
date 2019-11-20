@@ -8,10 +8,6 @@ class Trumbowyg extends Component {
     super(props)
   }
 
-  componentWillMount() {
-
-  }
-
   componentDidMount() {
 
     const {
@@ -99,17 +95,10 @@ class Trumbowyg extends Component {
     $(`#${id}`).trumbowyg(disabled === true ? 'disable' : 'enable')
   }
 
-  componentWillReceiveProps(nextProps) {
-  }
-
   shouldComponentUpdate(nextProps, nextState) {
 
     return nextProps.data !== this.props.data
       || nextProps.disabled !== this.props.disabled
-  }
-
-  componentWillUpdate(nextProps, nextState) {
-
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -117,7 +106,7 @@ class Trumbowyg extends Component {
     $(`#${this.props.id}`).trumbowyg(this.props.disabled === true ? 'disable' : 'enable')
   }
 
-  componentWillUnmount() {
+  UNSAFE_componentWillUnmount() {
     $(`#${this.props.id}`).trumbowyg('destroy')
   }
 

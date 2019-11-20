@@ -1,5 +1,5 @@
 {
-  "name": "react-trumbowyg",
+  "name": "react-trumbowyg_friendly",
   "version": "1.1.0",
   "description": "React wrapper for Trumbowyg",
   "main": "dist/react-trumbowyg.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:RD17/react-trumbowyg.git"
+    "url": "git@github.com:fedenelli/react-trumbowyg.git"
   },
   "keywords": [
     "Trumbowyg",
@@ -20,19 +20,25 @@
   "author": "RD17",
   "license": "MIT",
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "trumbowyg": "^2.3.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-eslint": "^7.1.0",
-    "babel-loader": "^6.2.7",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.13",
     "copy-webpack-plugin": "^4.0.0",
     "eslint": "^3.9.1",
     "eslint-loader": "^1.6.0",
     "eslint-plugin-react": "^6.4.1",
     "file-loader": "^0.9.0",
+    "react-hot-loader": "^4.12.18",
     "style-loader": "^0.13.1",
     "svg-inline-loader": "^0.7.1",
     "url-loader": "^0.5.7",
