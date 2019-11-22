@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import trumbowyg from 'trumbowyg'
 import svgIcons from 'trumbowyg/dist/ui/icons.svg'
 const trumbowygIconsId = 'trumbowyg-icons'
